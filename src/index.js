@@ -1,17 +1,17 @@
 export default async (array, func) => {
-  let result = false;
-  for (const item of array) {
-    let funcValue = null;
+  let result = false
+  for (const i of array) {
+    let funcValue = null
     try {
-      funcValue = await func(item);
+      funcValue = await func(i)
     } catch (e) {
-      console.error(e);
-      break;
+      console.error(e)
+      break
     }
-    result = funcValue;
+    result = funcValue
     if (result === true) {
-      break;
+      break
     }
   }
-  return result;
-};
+  return result
+}
