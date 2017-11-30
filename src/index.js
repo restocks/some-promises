@@ -8,8 +8,8 @@ export default async (array, func) => {
       console.error(e)
       break
     }
-    result = funcValue
     if (result === true) {
+      result = funcValue
       break
     }
   }
