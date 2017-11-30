@@ -15,8 +15,8 @@ This timer function has a 50% chance of resolving true. The data will be
 operated on in series until the end of the array is reached or a single item
 resolves as true.
 
-````js
-import somePromises from 'some-promises'
+```js
+import somePromises from 'some-promises';
 
 const timer = time => {
   return new Promise(resolve => {
@@ -33,5 +33,5 @@ const defaultF = async () => {
   console.log(`done: ${someVal}`);
 };
 
-defaultF();```
-````
+defaultF();
+```
