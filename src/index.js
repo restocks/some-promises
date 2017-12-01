@@ -8,7 +8,7 @@ export default async (array, func) => {
       console.error(e)
       break
     }
-    if (result === true) {
+    if (funcValue === true) {
       result = funcValue
       break
     }
